@@ -1,6 +1,7 @@
 import random
 
-colors = ['orange', 'red', 'blue', 'yellow', 'indigo', 'green', 'violet']
+colors = []
+colors.extend(('orange', 'red', 'blue', 'yellow', 'indigo', 'green', 'violet'))
 
 favColor = random.choice(colors)
 
