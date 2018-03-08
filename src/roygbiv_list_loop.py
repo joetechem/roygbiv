@@ -4,7 +4,12 @@ colors = ['orange', 'red', 'blue', 'yellow', 'indigo', 'green', 'violet']
 
 favColor = random.choice(colors)
 
-print("Hi! My favorite color is found in the rainbow.")
+print("Hi! My favorite color is found in the rainbow." +
+      "\n\n" +
+      "Colors in the Rainbow:")
+
+for color in colors:
+        print(color.title())
 
 time.sleep(1)
 
