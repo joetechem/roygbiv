@@ -1,6 +1,13 @@
 import random, time
 
-colors = ['orange', 'red', 'blue', 'yellow', 'indigo', 'green', 'violet']
+# Starting with an empty list
+colors = []
+
+# Adding items to the list (in bulk)
+colors.extend(('orange', 'red', 'blue', 'yellow', 'indigo', 'green', 'violet'))
+
+# Uncomment the line below to test colors.extend() worked
+#print(colors)
 
 favColor = random.choice(colors)
 
