@@ -24,11 +24,12 @@ while GameRunning:
 
         if guess.lower() != favColor:
                 print("Wrong!")
-                numberOfGuesses -= 1
+                numberOfGuesses += 1
                 print("Amount of guesses so far: " + str(numberOfGuesses))
                 print("Please, try again :)")
         elif guess == favColor:
                 print("\nYou guessed correctly!")
+                numberOfGuesses += 1
                 print("Total number of guesses: " + str(numberOfGuesses))
                 time_elapsed = time.clock() - start
                 print("Total time: " + str(time_elapsed) + " seconds")
